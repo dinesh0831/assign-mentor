@@ -20,9 +20,11 @@ const StudentList = new Schema({
     },
     mentor:{
         type:String
-    }
-   
+    },
+    assigned:{
+       type:String
+   }
 
 })
-const student = mongoose.model("students", StudentList, "students");
+const student = mongoose.model("student", StudentList, "student");
 module.exports = student

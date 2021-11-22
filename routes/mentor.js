@@ -4,5 +4,6 @@ const mentor=require("../service/mentor.service")
 router.patch("/:id",mentor.updateMentors)
 /* GET users listing. */
 router.post('/',mentor.mentors )
+router.get("/getAll",mentor.getAll)
 router.get('/:id/studentList',mentor.getMentors )
 module.exports = router;
